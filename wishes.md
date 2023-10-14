@@ -1,5 +1,6 @@
 # Plugins
-- Hop
+- [ ]  Hop
+- [ ]  Handling sessions
 
 # Mappings
-- <C-Arrows> - to change window size
+- [ ] <C-Arrows> - to change window size

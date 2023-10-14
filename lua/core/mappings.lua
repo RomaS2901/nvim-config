@@ -63,6 +63,8 @@ vim.keymap.set("n", "<leader>bp", ":BufferLineCyclePrev<CR>")
 vim.keymap.set("n", "<leader>bx", ":BufferLinePickClose<CR>")
 vim.keymap.set("n", "<leader>bX", ":BufferLineCloseRight<CR>")
 vim.keymap.set("n", "<leader>bs", ":BufferLineSortByTabs<CR>")
+vim.keymap.set("n", "<leader>bC", ":BufferLineCloseOthers<CR>")
+vim.keymap.set("n", "<leader>bc", ":Bdelete<CR>")
 
 -- Splits
 vim.keymap.set("n", "|", ":vsplit<CR>")
@@ -126,6 +128,9 @@ vim.keymap.set("n", "<leader>dM", "<cmd>lua require('neotest').run.run({strategy
 vim.keymap.set("n", "<leader>df", "<cmd>lua require('neotest').run.run({vim.fn.expand('%')})<CR>")
 vim.keymap.set("n", "<leader>dF", "<cmd>lua require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'})<CR>")
 vim.keymap.set("n", "<leader>dS", "<cmd>lua require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'})<CR>")
+
+-- Git
+vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>")
 
 -- Other
 vim.keymap.set("n", "<leader>w", ":w<CR>")

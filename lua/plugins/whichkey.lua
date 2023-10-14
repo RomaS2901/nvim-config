@@ -71,9 +71,12 @@ wk.register({
 			p = "Previous",
 			x = "Pick to close",
 			X = "Close right",
+			s = "Sort",
+			c = "Close",
+			C = "Close others",
 		},
 		t = {
-			name = "ToggleTerm",
+			name = "Terminal",
 			f = "Float",
 			h = "Horizontal",
 			v = "Vertical",
@@ -112,6 +115,10 @@ wk.register({
 			f = "Test class",
 			F = "Test class DAP",
 			S = "Test summary",
+		},
+		g = {
+			name = "Git",
+			g = "LazyGit",
 		},
 		["["] = {
 			name = "Goto prev",

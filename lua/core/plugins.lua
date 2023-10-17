@@ -35,11 +35,11 @@ require("lazy").setup({
 	{ "hrsh7th/nvim-cmp" },
 	{ "hrsh7th/cmp-vsnip" },
 	{ "hrsh7th/vim-vsnip" },
-	-- Mason & Null-ls
-	{ "williamboman/mason.nvim" },
+	-- Linters, Formatters
+	{ "williamboman/mason.nvim", dependencies = { "WhoIsSethDaniel/mason-tool-installer.nvim" } },
 	{ "williamboman/mason-lspconfig.nvim" },
-	{ "jay-babu/mason-null-ls.nvim" },
-	{ "jose-elias-alvarez/null-ls.nvim" },
+	{ "stevearc/conform.nvim", event = { "BufReadPre", "BufNewFile" } },
+	{ "mfussenegger/nvim-lint", event = { "BufReadPre", "BufNewFile" } },
 	-- DAP & Tests
 	{ "mfussenegger/nvim-dap" },
 	{ "jay-babu/mason-nvim-dap.nvim" },

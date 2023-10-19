@@ -8,5 +8,7 @@ conform.setup({
 	format_on_save = {
 		lsp_fallback = true,
 		async = false,
+		-- huge timeout to support formatting on Fold5
+		timeout_ms = 5000,
 	},
 })
